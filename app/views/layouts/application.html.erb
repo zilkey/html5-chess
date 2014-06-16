@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chess</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <%= link_to "Homepage", root_path %>
+  <% if current_user %>
+    |
+    Welcome <%= current_user.username %>
+  <% end %>
+</header>
+<%= yield %>
+
+</body>
+</html>

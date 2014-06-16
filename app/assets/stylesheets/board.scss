@@ -1,0 +1,72 @@
+html, body {
+  background: mintcream;
+}
+
+header {
+  background: #ccc;
+  padding: .5em;
+}
+
+table {
+  margin: 2em auto 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  padding: .5em;
+}
+
+td {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.black {
+  background: #b4c3e0;
+}
+
+.white {
+  background: #e8f3ff;
+}
+
+.piece[draggable] {
+  cursor: pointer;
+}
+
+.piece {
+  font-size: 32px;
+}
+
+td.over {
+  background: gold;
+}
+
+.cemetery {
+  flex: 1;
+}
+
+.board {
+  width: 600px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 300px;
+  width: 100%;
+}
+
+.cemetery {
+  padding-top: 4em;
+
+  &.left {
+    text-align: right;
+  }
+
+  &.right {
+    text-align: left;
+  }
+}

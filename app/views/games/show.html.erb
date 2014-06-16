@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="cemetery left" data-cemetery="white"></div>
+  <div class="board"></div>
+  <div class="cemetery right" data-cemetery="black"></div>
+</div>
+
+<script src="//js.pusher.com/2.2/pusher.min.js" type="text/javascript"></script>
+<%= javascript_include_tag 'application' %>
+
+<script>
+  $(function () {
+    Board.initialize($(".board"), '<%= @game.uuid %>', '<%= ENV['PUSHER_KEY'] %>', <%= @game.user == current_user %>);
+  });
+</script>

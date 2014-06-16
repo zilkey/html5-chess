@@ -1,0 +1,12 @@
+<%= form_for @game do |f| %>
+  <% if f.object.errors.present? %>
+    <ul class="errors">
+      <% f.object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= text_field :user, :username, placeholder: "Enter a username", value: current_user.try(:username) %>
+  <%= f.submit "Create Game!" %>
+<% end %>

@@ -1,0 +1,15 @@
+<h1>You must login to view this game</h1>
+
+<%= form_for @user, url: login_game_path(@game) do |f| %>
+  <% if f.object.errors.present? %>
+    <ul class="errors">
+      <% f.object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <%= f.text_field :username, placeholder: "Enter a username" %>
+
+  <%= f.submit "Log In" %>
+<% end %>
