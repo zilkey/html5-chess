@@ -26,3 +26,7 @@ If the pusher stuff doesn't work, uncomment the lines in `application.js` that e
 * Enter a different username
 * Play a white move in one tab, switch to the other to watch it take place
 * Play a black move in the other tab
+
+## Heroku
+
+http://desolate-eyrie-1441.herokuapp.com/
