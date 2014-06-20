@@ -51,9 +51,9 @@ window.Board = {
       for (horizontal = 1; horizontal < 9; horizontal++) {
         var className;
         if (vertical % 2 == 0) {
-          className = horizontal % 2 == 0 ? "white" : "black";
-        } else {
           className = horizontal % 2 == 0 ? "black" : "white";
+        } else {
+          className = horizontal % 2 == 0 ? "white" : "black";
         }
         var letter = this.letters[horizontal - 1];
         var $td = $("<td>").addClass(className);
